@@ -61,7 +61,7 @@ function App() {
           </Route>
           <Route path='/video' element={<Video setProgress={setProgress} />}>
           </Route>
-          <Route path='/Swipper' element={<Swipper setProgress={setProgress} />}>
+          <Route path='/swipper' element={<Swipper setProgress={setProgress} />}>
           </Route>
         </Routes>
       </Router>
