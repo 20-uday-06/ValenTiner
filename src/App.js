@@ -9,6 +9,8 @@ import Envelope from './components/Envelope';
 import Destroy from './components/Destroy';
 import Qrcode from './components/Qrcode';
 import Reel from './components/Reel';
+import Video from './components/Video';
+import Swipper from './components/Swipper';
 import {
   BrowserRouter as Router,
   Routes,
@@ -56,6 +58,10 @@ function App() {
           <Route path='/qrcode' element={<Qrcode setProgress={setProgress} />}>
           </Route>
           <Route path='/reel' element={<Reel setProgress={setProgress} />}>
+          </Route>
+          <Route path='/video' element={<Video setProgress={setProgress} />}>
+          </Route>
+          <Route path='/Swipper' element={<Swipper setProgress={setProgress} />}>
           </Route>
         </Routes>
       </Router>

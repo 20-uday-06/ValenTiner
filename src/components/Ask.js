@@ -164,14 +164,16 @@ export default function Ask(props) {
             {askText} <span>{emojiAsk}</span>
           </div>
           <div className="buttons flex flex-row flex-wrap gap-16 mb-2 items-center justify-center">
+            <a href="/reels">
             <button
               className='Yes w-fit h-fit'
-              onClick={handleYesClick}
+              // onClick={handleYesClick}
             >
               <div className="button-yes button-text px-7 py-3 border-2 rounded-xl text-xl bg-transparent bg-gradient-to-tr from-[#3a6186] to-[#89253e] text-gray-200 shadow-xl shadow-pink-500 hover:scale-110 active:scale-90 duration-200">
                 Yes
               </div>
             </button>
+            </a>
             <button
               className='No w-fit h-fit rotate-[14deg] duration-300'
               onClick={handleNoClick}
@@ -181,7 +183,7 @@ export default function Ask(props) {
               </div>
             </button>
           </div>
-          {yesOrNow === "Yes" ? <MessageSend /> : null}
+          {/* {yesOrNow === "Yes" ? <MessageSend /> : null} */}
         </div>
       </div>
       <Link to="/destroy" className="destroy-link hidden pointer-events-none select-none"></Link>
