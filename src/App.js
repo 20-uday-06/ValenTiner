@@ -7,6 +7,8 @@ import EndPage from './components/EndPage';
 import Ask from './components/Ask';
 import Envelope from './components/Envelope'; 
 import Destroy from './components/Destroy';
+import Qrcode from './components/Qrcode';
+import Reel from './components/Reel';
 import {
   BrowserRouter as Router,
   Routes,
@@ -50,6 +52,10 @@ function App() {
           <Route path='/endpage' element={<EndPage setProgress={setProgress} />}>
           </Route>
           <Route path='/destroy' element={<Destroy setProgress={setProgress} />}>
+          </Route>
+          <Route path='/qrcode' element={<Qrcode setProgress={setProgress} />}>
+          </Route>
+          <Route path='/reel' element={<Reel setProgress={setProgress} />}>
           </Route>
         </Routes>
       </Router>
