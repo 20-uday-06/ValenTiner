@@ -44,16 +44,21 @@ export default function GiftBoxAnimation() {
   }
 
   return (
-    
+
+
     <div className="App">
+      <div className="bhagwanbharose">
       <Confetti open={jump === "jump"} />
-      <div className="img-container">
-      <div style={{position: "absolute" , zIndex: "-1", top: "30%", left: "42%"}}>
-                <a href="/video">
+
+      <div className="img-container" style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+      <div style={{paddingTop: "10vw", position: "relative"}}>
+                <a href="/video" style={{marginTop: "5vh"}}>
                 <button class="button" style={{fontSize: "2vw", borderRadius: "20px", padding: "0.7vw 2.3vw", color: "white", backgroundColor: "red", fontWeight: "bold" }}>Click Me :)</button>
                 </a>
             </div>
+            <div className="dabba" style={{position: "relative", height: "40vh", width: "100%"}}>
         <img className={`kuku ${jump}`} src={kuku} alt="kuku" />
+
         <button className="box" onClick={() => animate()}>
           <img src={box} alt="box" />
         </button>
@@ -62,7 +67,9 @@ export default function GiftBoxAnimation() {
           src={boxLid}
           alt="box-lid"
         />
+        </div>
       </div>
+    </div>
     </div>
   );
 }

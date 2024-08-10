@@ -69,10 +69,10 @@ export default function Card(props) {
         </div>
         <div className="card transition-transform blur-xl z-2 w-80 h-52 bg-[#ecb9e5] shadow-xl rounded-xl absolute flex flex-col flex-wrap items-center">
           <div
-            className="text-1 relative mt-4 mx-11 text-3xl text-right select-none">
-            Happy Valentine's Day!
+            className="relative mt-4 mx-11 text-4xl text-right select-none">
+            Happy Birthday!
           </div>
-          <div className="relative text-right text-xl font-bold mt-1 mx-14 text-transparent bg-clip-text bg-gradient-to-br from-[#42275a] to-[#753a88] select-none">I have written something for you
+          <div className="relative text-right text-3xl font-bold mt-1 mx-14 text-transparent bg-clip-text bg-gradient-to-br from-[#42275a] to-[#753a88] select-none">To the one I adore.
           </div>
           <div
             className="button-2 w-fit h-fit hidden">

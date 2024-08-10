@@ -60,7 +60,7 @@ export default function Ask(props) {
   const navigate = useNavigate();
 
   const [noCount, setNoCount] = useState(0);
-  const [askText, setAskText] = useState("Will you do me the honor of being my Valentine?");
+  const [askText, setAskText] = useState("Would you like to see my surprise?");
   const [emojiAsk, setEmojiAsk] = useState('💗');
   const [yesOrNow, setYesOrNow] = useState(null);
 

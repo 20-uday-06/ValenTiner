@@ -7,7 +7,7 @@ import './styles/frontpage.css';
 
 export default function FrontPage() {
     const [text, setText] = useState('');
-    const sentence = "We have known each other from a long time but today I have something important to tell you...\n";
+    const sentence = "Forever grateful for every moment with you and your smile is the best part of my day...\n";
     const typingSpeed = 200; // Adjust typing speed here
 
     useEffect(() => {
@@ -40,7 +40,7 @@ export default function FrontPage() {
     };
 
     return (
-        <div id='front-page' className='min-h-screen opacity-80 overflow-hidden w-full flex items-center justify-center flex-col gap-16 transition-opacity duration-200 ease-in-out bg-transparent bg-gradient-to-r from-[#c33764] to-[#1d2671]' >
+        <div id='front-page' className='min-h-screen opacity-80 overflow-hidden w-full flex items-center justify-center flex-col gap-16 transition-opacity duration-200 ease-in-out bg-transparent bg-gradient-to-r from-[#c33764] to-[#1d2671]' style={{position: "realtive", zIndex: "20"}}>
             <img src={bg} alt="" className='absolute min-h-screen object-cover pointer-events-none overflow-hidden' />
             <div className="absolute pointer-events-none">
                 <Lottie
@@ -52,21 +52,18 @@ export default function FrontPage() {
             </div>
             <div className="heart opacity-75">
                 <div className="text absolute -top-4 z-10 w-72 p-3 h-auto flex flex-col rotate-45 select-none">
-                    <p className='w-fit h-fit text-font text-center custom-color-text'>
-                        In the midst of life's tumultuous sea,
+                    <p className='w-fit h-fit text-font text-center text-white text-2xl'>
+                        In you, I've found my bbest friend, my
                     </p>
-                    <p className='w-fit h-fit text-font text-center custom-color-text'>
-                        Amidst chaos and uncertainty,
+                    <p className='w-fit h-fit text-font text-center  text-white  text-1xl'>
+                        greatest support, and the love of my
                     </p>
-                    <p className='w-fit h-fit text-font text-center custom-color-text'>
-                        I found my anchor, my guiding light,
-                    </p>
-                    <p className='w-fit h-fit text-font text-center custom-color-text'>
-                        In your love, serene and bright.
+                    <p className='w-fit h-fit text-font text-center  text-white '>
+                        life. Happy Birthday to the person who completes me.
                     </p>
                 </div>
                 <div className="autor text-author absolute bottom-8 left-10 rotate-45">
-                    ~ Manas
+                    ~ Pathak Ji
                 </div>
             </div>
             <div className="content-ask text-white z-10 flex flex-col flex-wrap gap-6 justify-center items-center">

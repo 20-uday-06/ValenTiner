@@ -8,9 +8,11 @@ import Ask from './components/Ask';
 import Envelope from './components/Envelope'; 
 import Destroy from './components/Destroy';
 import Qrcode from './components/Qrcode';
-import Reel from './components/Reel';
+// import Reel from './components/Reel';
+import GiftBoxAnimation from '../src/GiftBoxAnimation';
 import Video from './components/Video';
 import Swipper from './components/Swipper';
+import Audio from './components/Audio';
 import {
   BrowserRouter as Router,
   Routes,
@@ -57,11 +59,13 @@ function App() {
           </Route>
           <Route path='/qrcode' element={<Qrcode setProgress={setProgress} />}>
           </Route>
-          <Route path='/reel' element={<Reel setProgress={setProgress} />}>
+          <Route path='/reel' element={<GiftBoxAnimation setProgress={setProgress} />}>
           </Route>
           <Route path='/video' element={<Video setProgress={setProgress} />}>
           </Route>
           <Route path='/swipper' element={<Swipper setProgress={setProgress} />}>
+          </Route>
+          <Route path='/audio' element={<Audio setProgress={setProgress} />}>
           </Route>
         </Routes>
       </Router>
